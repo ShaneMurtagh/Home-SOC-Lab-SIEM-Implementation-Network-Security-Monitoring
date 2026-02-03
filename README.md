@@ -17,14 +17,6 @@ This project demonstrates my ability to deploy and manage a Windows Server Activ
 - Hyper-V or VirtualBox  
 - Internal virtual network  
 
-## Lab Diagram
-```
-[ DC01 - Windows Server 2022 ]
-     | Active Directory, DNS
-     |
-[ CLIENT01 - Windows 10 ]
-     | Joined to Domain: yourlab.local
-```
 
 ## What I Configured
 
