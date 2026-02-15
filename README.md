@@ -15,9 +15,10 @@ A hands-on Security Operations Center (SOC) lab built to develop practical threa
 | Category | Tools |
 |----------|-------|
 | **SIEM Platform** | Splunk Enterprise (Free License) |
-| **Virtualization** | VirtualBox 7.0 |
+| **Virtualization** | VM Ware|
 | **Operating Systems** | Windows 10, Ubuntu Linux |
 | **Security Tools** | Wireshark, Nmap, Windows Event Viewer |
 | **Network Simulation** | Cisco Packet Tracer |
 
 ## 🏗️ Lab Architecture
+
