@@ -62,13 +62,15 @@ Multiple failed login attempts from the same source, indicating a potential brut
 <br>
 
 ### 1. Splunk Data Ingestion
-![Splunk Data](./01_data_flowing.png)
+![Splunk Data](<img width="1228" height="723" alt="splunk11" src="https://github.com/user-attachments/assets/6b4e511d-d8ed-435f-b608-20067d832376" />
+)
 *Splunk actively collecting Windows Event Logs with 2,000+ events*
 
 <br>
 
 ### 2. Failed Login Detection
-![Failed Logins](./02_failed_logins.png)
+![Failed Logins](<img width="1227" height="709" alt="splunk22" src="https://github.com/user-attachments/assets/efcc9e4b-d5f3-448b-9443-0ec16f0d1bc6" />
+)
 *EventCode 4625 events showing failed authentication attempts*
 
 <br>
