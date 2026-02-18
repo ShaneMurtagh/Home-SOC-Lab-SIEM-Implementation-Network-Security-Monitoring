@@ -1,8 +1,7 @@
-# 🏠 Home SOC Lab: SIEM Implementation & Monitoring
+## 🏠 Home SOC Lab: SIEM Implementation & Network Security Monitoring
 
 ## 📋 Overview
 A Windows-based SOC lab using **Splunk Enterprise** to detect brute force attacks mapped to the **MITRE ATT&CK framework**. This lab demonstrates practical security monitoring and threat detection skills.
-
 <br>
 
 ## 🎯 Purpose
