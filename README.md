@@ -1,24 +1,39 @@
-<h1> 🔐 Home SOC Lab: Splunk SIEM Implementation
+# 🏠 Home SOC Lab: SIEM Implementation & Network Security Monitoring
 
-<h2> 📋 Overview</h2>
+## 📋 Overview
+A Windows-based SOC lab using **Splunk Enterprise** to detect brute force attacks mapped to the **MITRE ATT&CK framework**. This lab demonstrates practical security monitoring and threat detection skills.
 
+## 🎯 Purpose
+This lab showcases hands-on experience in:
+- 🛡️ **SIEM implementation** (Splunk)
+- 📊 **Windows Event Log** collection and analysis
+- 🔍 **Threat detection** (brute force attacks)
+- 🧠 **MITRE ATT&CK mapping** (T1110.001)
+- 📝 **Security documentation** and incident response workflows
 
-A hands-on Security Operations Center (SOC) lab built to develop practical threat detection, log analysis, and incident response skills using Splunk SIEM in an isolated virtual environment.
+## 🧰 Lab Components
+| Component | Description |
+| :--- | :--- |
+| **SIEM Platform** | Splunk Enterprise (free license) |
+| **Data Sources** | Windows Event Logs (Security, Application, System) |
+| **Detection Focus** | Brute force attacks (EventCode 4625) |
+| **Threat Intelligence** | MITRE ATT&CK Framework mapping |
 
-## 🎯 Objectives
-- Implement centralized log collection with Splunk SIEM
-- Create detection rules for common attack patterns
-- Practice threat hunting and incident investigation
-- Build reproducible security monitoring environment
+## 🎯 Detection Engineering: Brute Force Attack (T1110.001)
 
-## 🛠️ Technologies Used
-| Category | Tools |
-|----------|-------|
-| **SIEM Platform** | Splunk Enterprise (Free License) |
-| **Virtualization** | VMware Workstation Pro 25H2|
-| **Operating Systems** | Windows 10, Ubuntu Linux |
-| **Security Tools** | Wireshark, Nmap, Windows Event Viewer |
-| **Network Simulation** | Cisco Packet Tracer |
+### 🧠 MITRE ATT&CK Mapping
+| Attribute | Value |
+| :--- | :--- |
+| **Technique ID** | `T1110.001` |
+| **Technique Name** | Brute Force: Password Guessing |
+| **Tactic** | Credential Access |
 
-## 🏗️ Lab Architecture
-
+### 🔎 Detection Logic
+```spl
+index=windows EventCode=4625
+| stats count by ComputerName, Account_Name
+| where count > 1
+| eval technique_id="T1110.001"
+| eval technique_name="Brute Force: Password Guessing"
+| eval tactic="Credential Access"
+| table ComputerName, Account_Name, count, technique_id, technique_name, tactic
