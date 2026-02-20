@@ -102,6 +102,4 @@ Built as part of my journey into cybersecurity. I'm a career changer from **cons
 
 <br>
 
-## 📝 License
-This project is for educational purposes only.
 
