@@ -88,10 +88,7 @@ Building this lab taught me:
 
 <br>
 
-## 👨‍💻 About This Project
 
-Built as part of my journey into cybersecurity. I'm a career changer from **construction**,
-<br>
 
 ## 📬 Connect With Me
 
