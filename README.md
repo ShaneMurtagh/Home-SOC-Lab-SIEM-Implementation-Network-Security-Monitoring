@@ -1,10 +1,10 @@
-## 🏠 Home SOC Lab: SIEM Implementation & Network Security Monitoring
+## Home SOC Lab: SIEM Implementation & Network Security Monitoring
 
-## 📋 Overview
+## Overview
 A Windows-based SOC lab using **Splunk Enterprise** to detect brute force attacks mapped to the **MITRE ATT&CK framework**. This lab demonstrates practical security monitoring and threat detection skills.
 <br>
 
-## 🎯 Purpose
+## Purpose
 This lab showcases hands-on experience in:
 - 🛡️ **SIEM implementation** (Splunk)
 - 📊 **Windows Event Log** collection and analysis
@@ -14,7 +14,7 @@ This lab showcases hands-on experience in:
 
 <br>
 
-## 🧰 Lab Components
+## Lab Components
 
 | Component | Description |
 | :--- | :--- |
@@ -25,11 +25,11 @@ This lab showcases hands-on experience in:
 
 <br>
 
-## 🎯 Detection Engineering: Brute Force Attack (T1110.001)
+## Detection Engineering: Brute Force Attack (T1110.001)
 
 <br>
 
-### 🧠 MITRE ATT&CK Mapping
+### MITRE ATT&CK Mapping
 
 | Attribute | Value |
 | :--- | :--- |
@@ -39,7 +39,7 @@ This lab showcases hands-on experience in:
 
 <br>
 
-### 🔎 Detection Logic
+### Detection Logic
 
     index=windows EventCode=4625
     | stats count by ComputerName, Account_Name
@@ -51,13 +51,13 @@ This lab showcases hands-on experience in:
 
 <br>
 
-### ⚠️ What It Detects
+### What It Detects
 Multiple failed login attempts from the same source, indicating a potential brute force attack against local accounts.
 
 
 <br>
 
-## 📸 Screenshots
+## Screenshots
 
 ### 1. Splunk Data Ingestion
 ![Splunk Data](https://i.imgur.com/ew4rvyk.png)
@@ -72,7 +72,7 @@ Multiple failed login attempts from the same source, indicating a potential brut
 *Detection results enriched with MITRE ATT&CK context (T1110.001)*
 <br>
 
-## 📚 What I Learned
+## What I Learned
 
 Building this lab taught me:
 
@@ -90,7 +90,7 @@ Building this lab taught me:
 
 
 
-## 📬 Connect With Me
+## Connect With Me
 
 | Platform | Link |
 | :--- | :--- |
