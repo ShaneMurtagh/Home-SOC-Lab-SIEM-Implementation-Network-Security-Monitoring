@@ -90,12 +90,7 @@ Building this lab taught me:
 
 
 
-## Connect With Me
 
-| Platform | Link |
-| :--- | :--- |
-| **LinkedIn** | [linkedin.com/in/shane-murtagh](https://www.linkedin.com/in/shane-murtagh/) |
-| **Email** | shanemurtagh@protonmail.com |
 
 <br>
 
